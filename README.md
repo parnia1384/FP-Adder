@@ -25,3 +25,14 @@ The adder follows the standard floating-point addition steps:
 5. **Output formatting**
 
 ### Block Diagram
+    [ Input A ]       [ Input B ]
+          |                 |
+    [ Sign/Exp/Mant Split ] 
+          |                 |
+    [ Alignment Shift Unit ]
+          |                 |
+    [ Mantissa Adder/Subtractor ]
+          |                 |
+    [ Normalization & Rounding ]
+          |                 |
+       [ Output Z ]
